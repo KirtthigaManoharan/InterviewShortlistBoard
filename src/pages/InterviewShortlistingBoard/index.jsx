@@ -48,28 +48,28 @@ const ShortlistingBoard = () => {
       newUserListIds.splice(source.index, 1);
       newUserListIds.splice(destination.index, 0, draggableId);
 
-      const newHome = {
+      const newHomeListIds = {
         ...home,
         taskIds: newUserListIds,
       };
 
-      const latestRecord = {
+      const latestRecordFromListIds = {
         ...initialData,
         columns: {
           ...initialData.columns,
-          [newHome.id]: newHome,
+          [newHomeListIds.id]: newHomeListIds,
         },
       };
 
-      setInitialData(latestRecord);
-      setOriginalDataSet(latestRecord);
+      setInitialData(latestRecordFromListIds);
+      setOriginalDataSet(latestRecordFromListIds);
       return;
     }
 
     // moving from one list to another
     const homeTaskIds = Array.from(home.taskIds);
     homeTaskIds.splice(source.index, 1);
-    const newHome = {
+    const newHomeTaskIds = {
       ...home,
       taskIds: homeTaskIds,
     };
@@ -81,16 +81,16 @@ const ShortlistingBoard = () => {
       taskIds: foreignTaskIds,
     };
 
-    const latestRecord = {
+    const latestRecordFromTaskIds = {
       ...initialData,
       columns: {
         ...initialData.columns,
-        [newHome.id]: newHome,
+        [newHomeTaskIds.id]: newHomeTaskIds,
         [newForeign.id]: newForeign,
       },
     };
-    setInitialData(latestRecord);
-    setOriginalDataSet(latestRecord);
+    setInitialData(latestRecordFromTaskIds);
+    setOriginalDataSet(latestRecordFromTaskIds);
   };
 
   useEffect(() => {

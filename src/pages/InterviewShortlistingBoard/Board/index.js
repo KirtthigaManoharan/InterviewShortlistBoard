@@ -1,4 +1,4 @@
-import React from "react";
+import React,{Component,PureComponent} from "react";
 import styled from "styled-components";
 import { DragDropContext, Droppable } from "react-beautiful-dnd";
 import Column from "./column";
@@ -7,14 +7,14 @@ const Container = styled.div`
   display: flex;
 `;
 
-class InnerList extends React.PureComponent {
+class InnerList extends PureComponent {
   render() {
     const { column, taskMap, index } = this.props;
     const tasks = column.taskIds.map((taskId) => taskMap[taskId]);
     return <Column column={column} tasks={tasks} index={index} />;
   }
 }
-class Board extends React.Component {
+class Board extends Component {
   constructor(props) {
     super(props);
     this.state = {
