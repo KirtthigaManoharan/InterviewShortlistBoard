@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
+    "start": "webpack-dev-server --open",
     "build": "webpack"
   },
   "keywords": [],
@@ -16,7 +16,6 @@
     "css-loader": "^6.7.1",
     "generate-avatar": "^1.4.10",
     "lorem-ipsum": "^2.0.4",
-    "nodemon": "^2.0.16",
     "postcss-loader": "^7.0.0",
     "react": "^17.0.0",
     "react-beautiful-dnd": "^13.1.0",
