@@ -27,10 +27,6 @@ const TaskList = styled.div`
 
 class InnerList extends Component {
   shouldComponentUpdate(nextProps) {
-    // if (nextProps.tasks === this.props.tasks) {
-    //   return false;
-    // }
-    // return true;
     return nextProps.tasks !== this.props.tasks;
   }
   render() {
