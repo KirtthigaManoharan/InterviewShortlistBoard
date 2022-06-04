@@ -1,0 +1,64 @@
+.board-meta-details-container, .all-candidates-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  background-color: #f4f5f7;
+  .all-candidates-wrapper {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+    .all-candidates-group {
+      display: flex;
+      align-items: center;
+      margin: 10px 10px 5px 0px;
+      .all-candidates {
+        color: #32445B;
+      }
+      .active-count {
+        font-weight: 400;
+        color: #3F4144;
+      }
+      .fa {  
+        font-size: 12px;
+        top: -2px !important;
+        width: 10px !important;
+        height: 10px !important;
+        left: 8px;
+      }
+    }
+
+    .sorting-and-updating-container {
+      display: flex;
+      align-items: center;
+      margin: 10px 0px 5px 10px;
+      .sort-by {
+        color: #3F4144;
+        font-weight: 400;
+      }
+      .last-updated {
+        color: #32445B;
+        margin-left: 10px;
+      }
+      .fa {
+        font-size: 12px;
+        top: -2px !important;
+        width: 10px !important;
+        height: 10px !important;
+        left: 10px;
+      }
+    }
+  }
+
+  .call-to-sorting-action-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 50%;
+    .fa {
+      color: gray;
+      width: 40px !important;
+      height: 40px !important;
+    }
+  }
+}

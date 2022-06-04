@@ -1,0 +1,161 @@
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  display: block;
+  background-color: #fff;
+  .header-product-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    border-bottom: 1px solid lightgrey;
+    .fa-user-circle {
+      color: #8135f3;
+      font-size: 40px;
+    }
+    h5 {
+      color: #32445B;
+      padding-left: 15px;
+      font-size: 18px;
+      margin: 20px;  
+    }
+
+    .product-title {
+      display: flex;
+      align-items: center;
+    }
+
+    .call-to-action-container {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      .search {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid gray;
+        width: 50%;
+        margin-right: 20px;
+        .searchButton {
+          background: transparent;
+          outline: none;
+          border: 0px;
+          .fa {
+            color: gray;
+            top: -4px !important;
+            width: 5px !important;
+            height: 5px !important;
+          }
+        }
+        .searchTerm {
+          border: 0px;
+          outline: none;
+        }
+      }
+      .add-new-btn {
+        background-color: #05445E;
+        color: #fff;
+        border: 0px;
+        padding: 7px 20px;
+        border-radius: 5px;
+        font-weight: 600;
+      }
+      .fa-gift {
+        color: grey;
+        font-size: 30px;
+        top: 2px !important;
+      }
+      .initial {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #BAB86C;
+        > span {
+          color: #fff;
+          display: block;
+          text-align: center;
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+
+  .header-job-info {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid lightgrey;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: var(--ds-background-neutral,rgba(9,30,66,0.04));
+    .job-details-container {
+      display: flex;
+      align-items: center;
+      .jobs-wrapper {
+        display: flex;
+        align-items: center;
+        .fa-briefcase {
+          top: 9px !important;
+          color: #32445B;
+        }
+        > span {
+          color: #32445B;
+        }
+      }
+      .fa-chevron-right {
+        font-size: 14px !important;
+        color: #32445B;
+        width: 10px;
+        margin: 0px 10px 0px 5px;
+        font-weight: 100;
+      }
+      .job-title {
+        color: #32445B;
+        padding-right: 25px;
+      }
+      .view-job-details {
+        background-color: white;
+        outline: none;
+        border: 1px solid lightgrey;
+        padding: 5px;
+        color: #32445B;
+      }
+    }
+    .candidate-details-container {
+      display: flex;
+      align-items: center;
+      .candidate-btn {
+        display: flex;
+        align-items: center;
+        border: 1px solid lightgray;
+        padding: 0px;
+        > span {
+          padding: 5px 10px;
+        }
+        .fa {
+          padding: 5px 10px;
+          display: inline-block !important;
+          top: 0px !important;
+          width: auto !important;
+          height: auto !important;
+        }
+      }
+
+      .add-candidate-btn {
+        background-color: #fff;
+        color: #32445B;
+        margin-right: 10px;
+        > span {
+          border-right: 1px solid lightgray;
+        }
+      }
+      .published-btn {
+        background-color: #05445E;
+        margin-left: 10px;
+        color: #fff;
+        .fas {
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
+}
